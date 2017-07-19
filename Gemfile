@@ -44,10 +44,10 @@ group :development do
   gem 'annotate'
   gem 'rename'
   gem 'migration_comments'
+  gem 'faker'
 end
 
 group :test do
-  gem 'faker'
   gem 'database_cleaner'
 end
 
