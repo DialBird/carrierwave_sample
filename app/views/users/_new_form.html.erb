@@ -1,0 +1,24 @@
+<div class="row">
+  <div class="col-sm-6">
+    <div class="form-group">
+      <%= f.label :name, class: 'control-label col-sm-4' %>
+      <div class="col-sm-8">
+        <%= f.text_field :name, class: 'form-control' %>
+      </div>
+    </div>
+    <div class="form-group">
+      <%= f.label :image, class: 'control-label col-sm-4' %>
+      <div class="col-sm-8">
+        <%= f.file_field :image %>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="form-group">
+      <%= f.label :age, class: 'control-label col-sm-4' %>
+      <div class="col-sm-8">
+        <%= f.number_field :age, class: 'form-control' %>
+      </div>
+    </div>
+  </div>
+</div>

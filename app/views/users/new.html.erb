@@ -1,0 +1,15 @@
+<h1>ユーザー作成</h1>
+
+<%= form_for(@user, html: { class: 'form-horizontal', role: 'form'}) do |f| %>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">新規ユーザー</h4>
+    </div>
+    <div class="panel-body">
+      <%= render 'new_form', f: f %>
+    </div>
+    <div class="panel-footer text-center">
+      <%= f.submit '作成', class: 'btn btn-primary' %>
+    </div>
+  </div>
+<% end %>
