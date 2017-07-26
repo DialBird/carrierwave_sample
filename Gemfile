@@ -20,6 +20,7 @@ gem 'font-awesome-rails'
 gem 'kaminari'
 gem 'carrierwave'
 gem 'rmagick'
+gem 'fog'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
