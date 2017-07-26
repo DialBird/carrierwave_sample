@@ -14,7 +14,7 @@
   <tr>
     <td><%= user.name %></td>
     <td><%= user.age %></td>
-    <td><%= image_tag user.image_url %></td>
+    <td><%= image_tag user.image_url if user.image_url %></td>
   </tr>
   <% end %>
   </tbody>
