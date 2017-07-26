@@ -1,0 +1,14 @@
+<%= form_for @user, html: { class: 'form-horizontal' } do |f| %>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">新規ユーザー</h4>
+    </div>
+    <div class="panel-body">
+      <%= render 'confirm_form', { f: f, user: @user } %>
+    </div>
+    <div class="panel-footer text-center">
+      <%= link_to '戻る', new_user_path, class: 'btn btn-default' %>
+      <%= f.submit '作成', class: 'btn btn-primary' %>
+    </div>
+  </div>
+<% end %>
