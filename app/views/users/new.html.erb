@@ -1,15 +1,16 @@
 <h1>ユーザー作成</h1>
 
-<%= form_for(@user, html: { class: 'form-horizontal', role: 'form'}) do |f| %>
+<%= form_for(@user, url: confirm_users_path, html: { class: 'form-horizontal', role: 'form'}) do |f| %>
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">新規ユーザー</h4>
     </div>
     <div class="panel-body">
-      <%= render 'new_form', f: f %>
+      <%= render 'new_form', { f: f, user: @user } %>
     </div>
     <div class="panel-footer text-center">
-      <%= f.submit '作成', class: 'btn btn-primary' %>
+      <%= link_to 'クリア', new_user_path, class: 'btn btn-default' %>
+      <%= f.submit '確認', class: 'btn btn-primary' %>
     </div>
   </div>
 <% end %>

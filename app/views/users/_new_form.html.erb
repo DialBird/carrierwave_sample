@@ -7,17 +7,17 @@
       </div>
     </div>
     <div class="form-group">
-      <%= f.label :image, class: 'control-label col-sm-4' %>
-      <div class="col-sm-8">
-        <%= f.file_field :image %>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6">
-    <div class="form-group">
       <%= f.label :age, class: 'control-label col-sm-4' %>
       <div class="col-sm-8">
         <%= f.number_field :age, class: 'form-control' %>
+      </div>
+    </div>
+    <div class="form-group">
+      <%= f.label :image, class: 'control-label col-sm-4' %>
+      <div class="col-sm-8">
+        <%= f.file_field :image %>
+        <%= image_tag user.image_url if user.image_url %>
+        <%= f.hidden_field :image_cache %>
       </div>
     </div>
   </div>
